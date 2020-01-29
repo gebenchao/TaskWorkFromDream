@@ -1,0 +1,6 @@
+framework module Pods_TaskWorkFromDream {
+  umbrella header "Pods-TaskWorkFromDream-umbrella.h"
+
+  export *
+  module * { export * }
+}

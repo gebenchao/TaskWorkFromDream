@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4921901D9CEBAED6E17B603A /* Pods_TaskWorkFromDream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C687F0A72536C19FDE9484FE /* Pods_TaskWorkFromDream.framework */; };
 		D719831F23E139C80061EDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D719831E23E139C80061EDCD /* AppDelegate.swift */; };
 		D719832323E139C80061EDCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D719832223E139C80061EDCD /* ViewController.swift */; };
 		D719832623E139C80061EDCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D719832423E139C80061EDCD /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AF37EE25156FD26DA692765 /* Pods-TaskWorkFromDream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskWorkFromDream.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskWorkFromDream/Pods-TaskWorkFromDream.release.xcconfig"; sourceTree = "<group>"; };
+		972B792FA1B42EE5D009994F /* Pods-TaskWorkFromDream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskWorkFromDream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskWorkFromDream/Pods-TaskWorkFromDream.debug.xcconfig"; sourceTree = "<group>"; };
+		C687F0A72536C19FDE9484FE /* Pods_TaskWorkFromDream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskWorkFromDream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D719831B23E139C80061EDCD /* TaskWorkFromDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskWorkFromDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D719831E23E139C80061EDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D719832223E139C80061EDCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4921901D9CEBAED6E17B603A /* Pods_TaskWorkFromDream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAE386561EBEF973CC8500E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C687F0A72536C19FDE9484FE /* Pods_TaskWorkFromDream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7F1E02196285385938E88FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				972B792FA1B42EE5D009994F /* Pods-TaskWorkFromDream.debug.xcconfig */,
+				8AF37EE25156FD26DA692765 /* Pods-TaskWorkFromDream.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D719831223E139C80061EDCD = {
 			isa = PBXGroup;
 			children = (
 				D719831D23E139C80061EDCD /* TaskWorkFromDream */,
 				D719831C23E139C80061EDCD /* Products */,
+				B7F1E02196285385938E88FE /* Pods */,
+				AAE386561EBEF973CC8500E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,70 @@
 		D719831D23E139C80061EDCD /* TaskWorkFromDream */ = {
 			isa = PBXGroup;
 			children = (
-				D719831E23E139C80061EDCD /* AppDelegate.swift */,
+				D719833523E1594C0061EDCD /* AppDelegate */,
+				D719833223E159170061EDCD /* Classes */,
+				D719833623E159A40061EDCD /* LaunchScreen */,
+				D719833723E15A060061EDCD /* Resources */,
 				D719832223E139C80061EDCD /* ViewController.swift */,
 				D719832423E139C80061EDCD /* Main.storyboard */,
-				D719832723E139C90061EDCD /* Assets.xcassets */,
-				D719832923E139C90061EDCD /* LaunchScreen.storyboard */,
 				D719832C23E139C90061EDCD /* Info.plist */,
 			);
 			path = TaskWorkFromDream;
+			sourceTree = "<group>";
+		};
+		D719833223E159170061EDCD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D719833323E159220061EDCD /* Base */,
+				D719833423E159380061EDCD /* Module */,
+				D719833823E15A6C0061EDCD /* Networking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D719833323E159220061EDCD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D719833423E159380061EDCD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D719833523E1594C0061EDCD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D719831E23E139C80061EDCD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D719833623E159A40061EDCD /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D719832923E139C90061EDCD /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		D719833723E15A060061EDCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D719832723E139C90061EDCD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D719833823E15A6C0061EDCD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D719832F23E139C90061EDCD /* Build configuration list for PBXNativeTarget "TaskWorkFromDream" */;
 			buildPhases = (
+				9AF8049206D66137F48FFB2D /* [CP] Check Pods Manifest.lock */,
 				D719831723E139C80061EDCD /* Sources */,
 				D719831823E139C80061EDCD /* Frameworks */,
 				D719831923E139C80061EDCD /* Resources */,
+				ACB3CBC1E442B3116EB1FB79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +211,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AF8049206D66137F48FFB2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskWorkFromDream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB3CBC1E442B3116EB1FB79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TaskWorkFromDream/Pods-TaskWorkFromDream-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskWorkFromDream/Pods-TaskWorkFromDream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D719831723E139C80061EDCD /* Sources */ = {
@@ -278,6 +417,7 @@
 		};
 		D719833023E139C90061EDCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972B792FA1B42EE5D009994F /* Pods-TaskWorkFromDream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +436,7 @@
 		};
 		D719833123E139C90061EDCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF37EE25156FD26DA692765 /* Pods-TaskWorkFromDream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

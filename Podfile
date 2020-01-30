@@ -9,6 +9,7 @@ target 'TaskWorkFromDream' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SVProgressHUD'
+  pod 'IQKeyboardManagerSwift'
   
 end
 

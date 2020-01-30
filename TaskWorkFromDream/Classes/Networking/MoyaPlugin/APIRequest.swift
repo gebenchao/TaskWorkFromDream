@@ -1,0 +1,54 @@
+import Foundation
+import RxSwift
+import Moya
+import SVProgressHUD
+
+enum Result<ResponseModel: Codable, ErrorResponseModel: Codable> {
+    case success(ResponseModel)
+    case invalid(ErrorResponseModel)
+    case failure(Error)
+}
+
+public final class TranslateApiRequest {
+
+    private let provider = MoyaProvider<TranslateApi>()
+
+    func request<ResponseModel: Codable, ErrorResponseModel: Codable>(target: TranslateApi, response: ResponseModel.Type, errorResponse: ErrorResponseModel.Type,
+                                                                      completion: @escaping ((Result<ResponseModel, ErrorResponseModel>) -> Void )) {
+
+        SVProgressHUD.setDefaultMaskType(.black)
+        SVProgressHUD.show()
+        provider.request(target) { result in
+            SVProgressHUD.dismiss()
+            switch result {
+            case let .success(response):
+                do {
+                    let serializedResponse = try response.filterSuccessfulStatusCodes().map(ResponseModel.self)
+                    dump(serializedResponse)
+
+                    completion(.success(serializedResponse))
+
+                } catch {
+                    guard let errorResponse = self.serializeError(response: response, errorResponse: errorResponse) else { completion(.failure(error)); return }
+                    dump(errorResponse)
+
+                    completion(.invalid(errorResponse))
+
+                }
+            case let .failure(error):
+                dump(error)
+                completion(.failure(error))
+            }
+        }
+    }
+
+    private func serializeError<ErrorResponseModel: Codable>(response: Moya.Response, errorResponse: ErrorResponseModel.Type) -> ErrorResponseModel? {
+        do {
+            let errorResponse = try response.map(ErrorResponseModel.self)
+            dump(errorResponse)
+            return errorResponse
+        } catch {
+            return nil
+        }
+    }
+}

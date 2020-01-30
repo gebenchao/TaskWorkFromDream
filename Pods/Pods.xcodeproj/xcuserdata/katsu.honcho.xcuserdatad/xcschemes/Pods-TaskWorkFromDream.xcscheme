@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E5D225B98286EA7EDDBC72B9F5781F51"
+               BlueprintIdentifier = "A97C72AEDCC633FEA69F1922367EA3CC"
                BuildableName = "Pods_TaskWorkFromDream.framework"
                BlueprintName = "Pods-TaskWorkFromDream"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="104" id="wCl-07-xFw" customClass="TranslateListViewCell" customModule="TaskWorkFromDream" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wCl-07-xFw" id="q6G-Wd-ylf">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idd-R4-fCC">
+                        <rect key="frame" x="12" y="6" width="420" height="92"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-dz-SCu">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="baseLightWhite20"/>
+                        <constraints>
+                            <constraint firstItem="c0n-dz-SCu" firstAttribute="leading" secondItem="idd-R4-fCC" secondAttribute="leading" id="0Af-6y-f2I"/>
+                            <constraint firstItem="c0n-dz-SCu" firstAttribute="top" secondItem="idd-R4-fCC" secondAttribute="top" id="Net-Bz-PVA"/>
+                            <constraint firstAttribute="trailing" secondItem="c0n-dz-SCu" secondAttribute="trailing" id="O9s-lv-6Ij"/>
+                            <constraint firstAttribute="bottom" secondItem="c0n-dz-SCu" secondAttribute="bottom" id="aYa-Xd-ABs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="idd-R4-fCC" secondAttribute="trailing" constant="12" id="0wn-in-S2S"/>
+                    <constraint firstItem="idd-R4-fCC" firstAttribute="leading" secondItem="q6G-Wd-ylf" secondAttribute="leading" constant="12" id="7BJ-5G-nAU"/>
+                    <constraint firstAttribute="bottom" secondItem="idd-R4-fCC" secondAttribute="bottom" constant="6" id="7HY-uh-pkX"/>
+                    <constraint firstItem="idd-R4-fCC" firstAttribute="top" secondItem="q6G-Wd-ylf" secondAttribute="top" constant="6" id="Yg3-mM-F1J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="baseView" destination="idd-R4-fCC" id="DlD-fx-Vze"/>
+                <outlet property="translateLabel" destination="c0n-dz-SCu" id="YLi-Ul-5C5"/>
+            </connections>
+            <point key="canvasLocation" x="2.8985507246376816" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="baseLightWhite20">
+            <color red="1" green="0.98000001907348633" blue="1" alpha="0.20499999821186066" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
